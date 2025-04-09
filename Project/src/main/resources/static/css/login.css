@@ -16,8 +16,15 @@ h1 {
 .login_form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   gap: 1rem;
+}
+
+.signup_form {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 0.5rem;
 }
 
 .login_input {
@@ -31,8 +38,17 @@ h1 {
   color: rgb(200, 200, 200);
 }
 
+.signup_label {
+  margin-top: 1rem;
+}
+
 .caution {
   display: none;
+}
+
+.shown_caution {
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
 }
 
 .select_container {

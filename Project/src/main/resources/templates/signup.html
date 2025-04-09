@@ -1,11 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/shared.css" />
+    <link rel="stylesheet" href="../static/css/login.css" />
+    <title>Jabcho Signup</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="jabcho_logo">
+        <p>🌿 Jabcho</p>
+      </div>
+      <!-- <div class="jabcho_tool">
+      <a href="" class="jabcho_tool_items">이</a>
+      <a href="" class="jabcho_tool_items">것</a>
+      <a href="" class="jabcho_tool_items">저</a>
+      <a href="" class="jabcho_tool_items">것</a>
+      <a href="" class="jabcho_tool_items">여</a>
+      <a href="" class="jabcho_tool_items">기</a>
+      <a href="" class="jabcho_tool_items">저</a>
+      <a href="" class="jabcho_tool_items">기</a>
+    </div>
+    <div class="jabcho_login">
+      <a
+        href="http://127.0.0.1:5500/Project/src/main/resources/templates/login.html"
+        class="loginbtn"
+        >로그인</a
+      >
+    </div> -->
+    </header>
+
+    <main>
+      <div class="login_container">
+        <h1>회원가입</h1>
+        <form action="/login" class="signup_form">
+          <label for="user_name" class="signup_label">이름</label>
+          <input
+            type="text"
+            placeholder="이름 입력"
+            class="login_input"
+            name="user_name"
+          />
+          <label for="user_email" class="signup_label">이메일</label>
+          <input
+            type="email"
+            placeholder="이메일 입력"
+            class="login_input"
+            name="user_email"
+          />
+          <p class="caution">이메일 주소를 입력해주세요</p>
+          <label for="user_password" class="signup_label">비밀번호</label>
+          <p class="shown_caution">비밀번호는 8~20자 영문, 숫자, 특수문자로 입력하세요.</p>
+          <input
+            type="password"
+            placeholder="비밀번호 입력"
+            class="login_input"
+          />
+          <input
+            type="password"
+            placeholder="비밀번호 확인"
+            class="login_input"
+          />
+          <button class="login_btn">다음</button>
+          <p class="signup">
+            이미 가입하셨나요?
+            <a
+              href="http://127.0.0.1:5500/Project/src/main/resources/templates/signup.html"
+              >로그인</a
+            >
+          </p>
+        </form>
+      </div>
+    </main>
+  </body>
 </html>
