@@ -48,7 +48,9 @@ h1 {
 }
 
 .caution {
-  display: none;
+  /* display: none; */
+  color: rgb(255, 53, 53);
+  margin-bottom: 0.5rem;
 }
 
 .shown_caution {
