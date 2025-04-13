@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/shared.css" />
+    <link rel="stylesheet" href="../static/css/personalsettings.css" />
+
+    <title>Jabcho Main</title>
+  </head>
+  <body>
+    <header>
+      <div class="jabcho_logo">
+        <img src="../static/images/Jobcho_logo.png" alt="Jobcho_logo" />
+        <p>Jabcho</p>
+      </div>
+      <div class="header_user_info">
+        <img src="../static/images/default_profile.png" alt="user_img" />
+        <p>이름(송효준)</p>
+      </div>
+    </header>
+
+    <main>
+      <div class="main_container">
+        <div class="profile_img personal_info_items">
+          <div class="info_texts">
+            <p>프로필 사진</p>
+            <img src="../static/images/default_profile.png" alt="profile_img" />
+          </div>
+        </div>
+        <div class="profile_name personal_info_items">
+          <div class="info_texts">
+            <p>이름</p>
+            <p class="user_info">송효준</p>
+          </div>
+          <img src="../static/images/arrow-down.png" alt="arrow_down" />
+        </div>
+        <div class="profile_email personal_info_items">
+          <div class="info_texts">
+            <p>이메일 관리</p>
+            <p class="user_info">thdgywns2300@gmail.com</p>
+          </div>
+          <img src="../static/images/arrow-down.png" alt="arrow_down" />
+        </div>
+        <div class="profile_pw personal_info_items">
+          <div class="info_texts">
+            <p>비밀번호 변경</p>
+            <p class="user_info">최종변경일 : 2025/04/13</p>
+          </div>
+          <img src="../static/images/arrow-down.png" alt="arrow_down" />
+        </div>
+        <div class="profile_delete personal_info_items">
+          <p class="user_info">잡초 계정 삭제</p>
+          <img src="../static/images/arrow-down.png" alt="arrow_down" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggleItems = document.querySelectorAll(".personal_info_items");
+
+    toggleItems.forEach((item) => {
+      const arrowImg = item.querySelector("img[alt='arrow_down']");
+      if (!arrowImg) return;
+
+      item.addEventListener("click", () => {
+        const isDown = arrowImg.src.includes("arrow-down.png");
+        arrowImg.src = isDown
+          ? "../static/images/arrow-up.png"
+          : "../static/images/arrow-down.png";
+      });
+    });
+  });
+</script>
