@@ -11,25 +11,9 @@
   <body>
     <header>
       <div class="jabcho_logo">
-        <p>🌿 Jabcho</p>
+        <img src="../static/images/Jobcho_logo.png" alt="Jobcho_logo">
+        <p>Jabcho</p>
       </div>
-      <!-- <div class="jabcho_tool">
-        <a href="" class="jabcho_tool_items">이</a>
-        <a href="" class="jabcho_tool_items">것</a>
-        <a href="" class="jabcho_tool_items">저</a>
-        <a href="" class="jabcho_tool_items">것</a>
-        <a href="" class="jabcho_tool_items">여</a>
-        <a href="" class="jabcho_tool_items">기</a>
-        <a href="" class="jabcho_tool_items">저</a>
-        <a href="" class="jabcho_tool_items">기</a>
-      </div>
-      <div class="jabcho_login">
-        <a
-          href="http://127.0.0.1:5500/Project/src/main/resources/templates/login.html"
-          class="loginbtn"
-          >로그인</a
-        >
-      </div> -->
     </header>
 
     <main>
@@ -37,18 +21,17 @@
         <h1>로그인</h1>
         <form action="/login" class="login_form">
           <input type="email" placeholder="이메일" class="login_input" />
-          <p class="caution">이메일 주소를 입력해주세요</p>
+          <p class="caution">이메일 주소를 입력해주세요.</p>
           <input type="password" placeholder="비밀번호" class="login_input" />
+          <p class="caution">비밀번호가 일치하지 않습니다.</p>
           <div class="select_container">
-            <label for="" class="checkbox"
-              ><input type="checkbox" />이메일 기억하기</label
-            >
-            <label for="" class="checkbox"
-              ><input type="checkbox" />로그인 상태 유지</label
-            >
-            <a href="/forgotpassword" class="forgotpassword"
-              >비밀번호 찾기 &rarr;</a
-            >
+            <label for="" class="checkbox">
+              <input type="checkbox" />이메일 기억하기
+            </label>
+            <label for="" class="checkbox">
+              <input type="checkbox" />로그인 상태 유지
+            </label>
+            <a href="/forgotpassword" class="forgotpassword">비밀번호 찾기</a>
           </div>
           <button class="login_btn">로그인</button>
           <p class="signup">

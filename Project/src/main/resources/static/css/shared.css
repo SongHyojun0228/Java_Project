@@ -6,17 +6,16 @@
 
 body {
   font-family: "Noto Sans KR", sans-serif;
-  background-color: rgb(248, 248, 247);
+  background-color: rgb(250, 250, 250);
 }
 
 button {
   cursor: pointer;
-  padding: 10px 16px;
   border: none;
   border-radius: 4px;
   background-color: rgb(151, 231, 198);
-  color: white;
-  font-size: 16px;
+  color: rgb(228, 228, 228);
+  font-size: 1rem;
   transition: background-color 0.2s ease;
 }
 
@@ -37,16 +36,24 @@ textarea {
 }
 
 header {
-  background-color: rgb(250, 250, 252);
+  width: 100%;
+  background-color: rgb(255, 255, 255);
   border-bottom: 1.5px solid rgb(228, 228, 227);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 15rem;
+  padding: 0.5rem 5rem;
 }
 
 .jabcho_logo {
-  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.jabcho_logo img {
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 0.4rem;  
 }
 
 .jabcho_logo p {
@@ -54,20 +61,29 @@ header {
   font-weight: 900;
 }
 
-/* .jabcho_tool {
-    display: flex;
-    gap: 2rem;
+.select_authentication {
+  display: flex;
+  gap : 1.5rem;
+  color: rgb(169,169,169);
 }
 
-.jabcho_tool_items {
-    font-weight: 700;
+.select_authentication a:hover {
+  color: rgb(6, 195, 115);
+  font-weight: bold;
 }
 
-.jabcho_login {
-    background-color: rgb(6, 195, 115);
-    margin-left: 45rem;
-    padding: 0.7rem 1rem;
-    color: white;
-    border-radius: 6px;
-    font-weight: 700;
-} */
+.header_user_info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header_user_info img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 12px;
+}
+
+.header_user_info p {
+  font-weight: bold;
+}
