@@ -3,6 +3,12 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.fade-out {
+  opacity: 0;
 }
 
 .customer_service_center_container {
