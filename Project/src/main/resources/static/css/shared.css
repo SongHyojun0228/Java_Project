@@ -19,11 +19,6 @@ button {
   transition: background-color 0.2s ease;
 }
 
-button:hover {
-  background-color: rgb(6, 195, 115);
-  font-weight: 600;
-}
-
 a {
   color: inherit;
   text-decoration: none;
